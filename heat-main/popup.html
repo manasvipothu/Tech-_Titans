@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI NightBite Dashboard</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-area">
+                <span class="logo-icon">🌙</span>
+                <h1 class="logo-text">AI NightBite</h1>
+            </div>
+            <div class="header-controls">
+                <button id="btn-detail" class="btn-detail-nav">Detail</button>
+                <div class="toggle-container" title="Enable/Disable Extension">
+                    <span class="toggle-label">App</span>
+                    <label class="switch">
+                        <input type="checkbox" id="ext-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-container" title="Toggle Notifications">
+                    <span class="toggle-label">🔔</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notif-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <!-- Time View Toggle -->
+        <div class="view-toggle-container">
+            <div class="view-toggle">
+                <button class="toggle-btn active" id="btn-night" data-view="night">🌙 Late-Night (10PM-4AM)</button>
+                <button class="toggle-btn" id="btn-day" data-view="day">☀️ Full-Day (24H)</button>
+            </div>
+        </div>
+
+        <!-- TAB 1: DASHBOARD -->
+        <div id="tab-dashboard" class="tab-content active">
+            <!-- Stat Cards -->
+            <section class="stat-cards-container">
+            <div class="stat-card animate-in" style="animation-delay: 0.1s;">
+                <div class="stat-icon bg-primary">📦</div>
+                <div class="stat-value" id="stat-val-orders">0</div>
+                <div class="stat-title">Total Orders</div>
+            </div>
+            <div class="stat-card animate-in" style="animation-delay: 0.2s;">
+                <div class="stat-icon bg-warning">🔥</div>
+                <div class="stat-value" id="stat-val-cals">0</div>
+                <div class="stat-title">Avg Calories</div>
+            </div>
+        </section>
+
+        <!-- Main Grid Layout -->
+        <main class="dashboard-grid">
+
+            
+            <!-- Risk Score Card -->
+            <section class="card risk-card">
+                <h2 class="card-title">Late Night Risk Score (LNR)</h2>
+                <div class="score-container">
+                    <svg class="score-circle" viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle-fg" id="score-ring"
+                            stroke-dasharray="0, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <div class="score-text">
+                        <span class="score-value" id="lnr-score">--</span>
+                        <span class="score-label">/100</span>
+                    </div>
+                </div>
+                <p class="score-desc" id="score-desc">Analyzing your habits...</p>
+            </section>
+
+            <!-- Craving Clock Card -->
+            <section class="card clock-card">
+                <h2 class="card-title">Craving Clock 🧠</h2>
+                <div class="clock-visualization">
+                    <div class="clock-face" id="craving-clock">
+                        <!-- Conic gradient applied via JS -->
+                        <div class="clock-center">Peak Time</div>
+                    </div>
+                </div>
+                <p class="clock-insight" id="clock-insight">You order most at --:-- AM</p>
+            </section>
+
+            <!-- Activity Heatmap -->
+            <section class="card heatmap-card full-width">
+                <div class="card-header-flex">
+                    <h2 class="card-title">Activity Heatmap 🟩</h2>
+                </div>
+                <!-- Pure CSS Grid Heatmap container -->
+                <div class="heatmap-container" id="heatmap-grid">
+                    <!-- Javascript populates cells -->
+                </div>
+                <div class="heatmap-legend">
+                    Less <span class="legend-box" style="background:var(--color-bg-alt)"></span>
+                    <span class="legend-box" style="background:var(--color-success)"></span>
+                    <span class="legend-box" style="background:var(--color-warning)"></span>
+                    <span class="legend-box" style="background:var(--color-danger)"></span> More Risk
+                </div>
+            </section>
+
+            <!-- Food DNA Card -->
+            <section class="card dna-card full-width">
+                <h2 class="card-title">Food DNA Visualization 🧬</h2>
+                <p class="dna-subtitle">Average nutritional makeup of your late-night orders.</p>
+                <div class="dna-bar">
+                    <div class="dna-segment dna-sugar" id="dna-sugar" style="width: 30%;">
+                        <span>Sugar 30%</span>
+                    </div>
+                    <div class="dna-segment dna-fat" id="dna-fat" style="width: 45%;">
+                        <span>Fat 45%</span>
+                    </div>
+                    <div class="dna-segment dna-carb" id="dna-carb" style="width: 25%;">
+                        <span>Carbs/Protein 25%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habit Insights -->
+            <section class="card insights-card full-width">
+                <h2 class="card-title">Habit Insights 📊</h2>
+                <ul class="insights-list" id="insights-list">
+                    <li>Loading insights...</li>
+                </ul>
+            </section>
+            
+            <!-- Smart Suggestions -->
+            <section class="card suggestions-card full-width">
+                <h2 class="card-title">Smart Suggestions 🎯</h2>
+                <div class="suggestion-item" id="dynamic-suggestion">
+                    <div class="suggestion-icon" id="sug-icon">🥗</div>
+                    <div class="suggestion-text">
+                        <strong id="sug-title">Loading suggestions...</strong>
+                        <p id="sug-desc">Analyzing your habits...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Orders (Shadcn Port) -->
+            <section class="card full-width">
+                <h2 class="card-title" style="margin-bottom: 16px;">Recent Orders 🕒</h2>
+                <div class="recent-orders-list" id="recent-orders-list">
+                    <!-- Populated via JS -->
+                    <div class="text-muted" style="text-align:center; font-size:12px; padding: 16px;">Loading tracked orders...</div>
+                </div>
+            </section>
+        </main>
+        </div><!-- END TAB 1 -->
+
+        <!-- TAB 2: CHALLENGES -->
+        <div id="tab-challenges" class="tab-content">
+            <h2 class="card-title" style="margin-bottom:16px; margin-top: 16px;">Gamified Health</h2>
+            <div class="dashboard-grid">
+                <section class="card full-width" style="border-left: 4px solid #facc15;">
+                    <h3 style="font-weight: 700; margin: 0 0 4px 0; font-size:13px; color: var(--color-text);">No Junk Week</h3>
+                    <p style="font-size: 11px; margin: 0; color: var(--color-text-muted);">Survive 7 days without high-risk foods.</p>
+                    <div style="margin-top: 12px; display:flex; justify-content:space-between; align-items:center;">
+                         <span class="badge-risk" style="background:#fef9c3; color:#ca8a04;">+100 pts</span>
+                          <button id="challenge-junk-btn" style="padding: 6px 16px; font-size:11px; font-weight: 600; border-radius:6px; cursor:pointer; background:#0f172a; color:#fff; border:none; transition: 0.1s;">Accept</button>
+                    </div>
+                </section>
+                <section class="card full-width" style="border-left: 4px solid #a855f7;">
+                    <h3 style="font-weight: 700; margin: 0 0 4px 0; font-size:13px; color: var(--color-text);">Midnight Warrior</h3>
+                    <p style="font-size: 11px; margin: 0; color: var(--color-text-muted);">Zero orders between 10 PM and 4 AM.</p>
+                    <div style="margin-top: 12px; display:flex; justify-content:space-between; align-items:center;">
+                         <span class="badge-risk" style="background:#faf5ff; color:#9333ea;">+80 pts</span>
+                          <span id="challenge-warrior-label" style="font-size: 11px; font-weight: 700; color: #64748b;">Day 3 / 7</span>
+                    </div>
+                    <div style="background:var(--color-bg-alt); height:6px; border-radius:3px; margin-top:8px; overflow:hidden;">
+                          <div id="challenge-warrior-progress" style="background:#a855f7; width:45%; height:100%;"></div>
+                    </div>
+                </section>
+                <section class="card full-width" style="border-left: 4px solid #10b981;">
+                    <h3 style="font-weight: 700; margin: 0 0 4px 0; font-size:13px; color: var(--color-text);">Calorie Control</h3>
+                    <p style="font-size: 11px; margin: 0; color: var(--color-text-muted);">Keep individual meals under 600 kcal.</p>
+                    <div style="margin-top: 12px; display:flex; justify-content:space-between; align-items:center;">
+                         <span class="badge-risk text-healthy">+150 pts</span>
+                          <span id="challenge-cal-status" style="font-size: 11px; font-weight: 700; color: #10b981;">Active</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- TAB 3: AI INSIGHTS -->
+        <div id="tab-ai" class="tab-content">
+            <h2 class="card-title" style="margin-bottom:16px; margin-top: 16px;">AI Behavioral Analysis</h2>
+            <div class="card full-width" style="text-align:center;">
+                <div style="font-size: 40px; margin-bottom: 12px;">🧠</div>
+                <p style="font-size: 12px; color: var(--color-text-muted); margin: 0 0 16px 0; line-height: 1.4;">Generate a comprehensive LLM report on your late-night eating triggers and NCD risks.</p>
+                <button id="btn-run-ai" style="padding: 10px 16px; background: #6366f1; color: #fff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.2s;">Analyze Habits</button>
+            </div>
+            
+            <div id="ai-results" style="display:none; margin-top:16px;">
+                <section class="card full-width animate-in" style="background:#eef2ff; border-color:#c7d2fe; box-shadow: 0 4px 6px -1px rgba(99,102,241,0.1);">
+                    <h3 style="font-size:13px; font-weight:800; color:#3730a3; border-bottom:1px solid #e0e7ff; padding-bottom:8px; margin:0 0 8px 0;">Analysis Complete</h3>
+                    <p style="font-size: 12px; color: #312e81; line-height:1.5; margin:0;">
+                        <strong>LLM Conclusion:</strong> High calorie density late at night heavily disrupts your circadian rhythm and increases risk of metabolic syndrome. Your habit drift is currently showing signs of improvement.
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;">
+                        <div style="background:#fff; padding:10px; border-radius:8px; border:1px solid #e0e7ff;">
+                            <span style="font-size:10px; color:#64748b; display:block; margin-bottom:2px;">Trigger Prediction</span>
+                            <span style="font-size:11px; font-weight:700; color:#ef4444;">Stress / Boredom</span>
+                        </div>
+                        <div style="background:#fff; padding:10px; border-radius:8px; border:1px solid #e0e7ff;">
+                            <span style="font-size:10px; color:#64748b; display:block; margin-bottom:2px;">Circadian Damage</span>
+                            <span style="font-size:11px; font-weight:700; color:#f59e0b;">Moderate (65/100)</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Bottom Tab Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" data-target="tab-dashboard"><span style="font-size:18px;">📊</span> Dashboard</button>
+            <button class="nav-btn" data-target="tab-challenges"><span style="font-size:18px;">🏆</span> Challenges</button>
+            <button class="nav-btn" data-target="tab-ai"><span style="font-size:18px;">🧠</span> AI Insights</button>
+        </nav>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "AI NightBite \u2013 Late Night Food Health Analyzer",
+  "version": "1.0",
+  "description": "Analyzes late-night food ordering and provides AI-based insights to reduce NCD risks.",
+  "permissions": [
+    "storage",
+    "notifications",
+    "sidePanel"
+  ],
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI NightBite Dashboard"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.swiggy.com/*", "*://*.zomato.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://smart-night-bite.base44.app/*",
+      "http://localhost/*"
+    ]
+  }
+}

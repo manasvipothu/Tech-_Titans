@@ -4,6 +4,7 @@ const nutritionService = require('../services/nutritionService');
 const aiService = require('../services/aiAnalysisService');
 const Order = require('../models/Order');
 const User = require('../models/User');
+const nlpClientService = require('../services/nlpClientService');
 
 router.post('/add-order', async (req, res) => {
   const { userId, foodItem } = req.body;
@@ -48,26 +49,6 @@ router.post('/add-order', async (req, res) => {
   });
 });
 
-router.get('/get-heatmap', async (req, res) => {
-  const { userId } = req.query;
-  let orders = [];
-  try {
-    orders = await Order.find({ userId });
-  } catch (e) {
-    console.warn('DB Find failed for heatmap, returning empty');
-  }
-  
-  // Group by date for heatmap (simulating GitHub 7x5 or similar)
-  const heatmap = {};
-  orders.forEach(o => {
-    const date = o.timestamp.toISOString().split('T')[0];
-    if (!heatmap[date]) heatmap[date] = { count: 0, health: 0 };
-    heatmap[date].count++;
-    heatmap[date].health += o.classification === 'Healthy' ? 1 : (o.classification === 'Moderate' ? 0 : -1);
-  });
-
-  res.json(heatmap);
-});
 
 router.get('/get-risk-score', async (req, res) => {
   const { userId } = req.query;
@@ -156,9 +137,15 @@ router.get('/get-heatmap', async (req, res) => {
       const date = new Date(o.timestamp).toISOString().split('T')[0];
       if (!heatmap[date]) heatmap[date] = { count: 0, health: 0 };
       heatmap[date].count += 1;
-      heatmap[date].health += o.foodType === 'Healthy' ? 1 : (o.foodType === 'Unhealthy' ? -1 : 0);
+      const fType = o.classification || o.foodType || 'Moderate';
+      heatmap[date].health += fType === 'Healthy' ? 1 : (fType === 'Unhealthy' ? -1 : 0);
     });
-    res.json({ heatmap, rawLogs: orders.slice(0, 10) }); // Top 10 recent orders as raw data
+    const rawLogs = orders.slice(0, 10).map(o => ({
+      foodItem: o.foodItem,
+      timestamp: o.timestamp,
+      foodType: o.classification || o.foodType || 'Moderate'
+    }));
+    res.json({ heatmap, rawLogs });
   } catch (e) {
     console.warn('DB Heatmap fetch failed, returning empty');
     res.json({ heatmap: {}, rawLogs: [] });
@@ -184,13 +171,23 @@ router.post('/create-goal', async (req, res) => {
 });
 
 router.post('/ai-chat', async (req, res) => {
-  const { message } = req.body;
-  const responses = [
-    "Based on your profile, you should avoid the Burger now. Try a Greek Yogurt instead.",
-    "Your late-night risk is high today. I suggest drinking 500ml of water first.",
-    "Great choice on the Sprout Salad! That matches your Silver tier goals."
-  ];
-  res.json({ response: responses[Math.floor(Math.random() * responses.length)] });
+  try {
+    const { message, userId = 'test_user_123' } = req.body;
+    if (!message || typeof message !== 'string' || message.trim().length === 0) {
+      return res.status(400).json({ error: 'Message cannot be empty.' });
+    }
+
+    const nlpOutput = await nlpClientService.processNLPQuery(message.trim(), userId);
+    res.json(nlpOutput);
+  } catch (err) {
+    console.error('Error handling /ai-chat:', err);
+    res.status(500).json({
+      intent: 'unsupported',
+      entities: {},
+      response: "I encountered a temporary processing error. Please try asking your nutrition question again.",
+      error: 'Internal processing error'
+    });
+  }
 });
 
 router.get('/get-community', async (req, res) => {

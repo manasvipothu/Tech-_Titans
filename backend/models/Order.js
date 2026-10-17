@@ -5,9 +5,9 @@ const OrderSchema = new mongoose.Schema({
   foodItem: { type: String, required: true },
   nutrition: {
     calories: Number,
-    sugar: Number,
-    fat: Number,
-    protein: Number
+    sugar: mongoose.Schema.Types.Mixed,
+    fat: mongoose.Schema.Types.Mixed,
+    protein: mongoose.Schema.Types.Mixed
   },
   timestamp: { type: Date, default: Date.now },
   isLateNight: { type: Boolean, default: false },

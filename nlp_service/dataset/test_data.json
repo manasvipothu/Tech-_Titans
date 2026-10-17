@@ -1,0 +1,290 @@
+[
+  {
+    "text": "How much water should I drink every day?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What is a good clean food choice for tonight?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Estimate calories for chicken sandwich",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What did I order on Swiggy or Zomato recently?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Suggest an alternative to coke or sugary soda.",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Give me a low calorie replacement for cheese pizza",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Why is protein important for muscle recovery?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Give me some healthy midnight snack options.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "What is the macro ratio of grilled chicken?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Ways to curb appetite before bedtime.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Tips to overcome nighttime craving triggers",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What vitamins and minerals does sprout salad provide?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Break down the carbs, fats, and protein in pizza",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Tell me the carbs and protein in a pizza",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How do I improve my eating habits to lower risk?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Who wrote the book Hamlet?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What can I substitute for sugary beverages?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What foods did I order yesterday?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Does coke have zero protein?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Give me some clean dinner ideas.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How many calories in a plate of biryani?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "I ate two burgers yesterday. How can I balance my meals today?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What is a good substitute for a burger?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How many calories should an average adult consume per day?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How do I repair a leaking bathroom faucet?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How to play chess for beginners?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What is a good evening snack?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How much protein is in grilled chicken salad?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Healthy substitute for fast food burgers",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Healthier swap for late night pizza",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What is the difference between simple and complex carbs?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What is the weather like today?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How energy dense is a zinger burger?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "I ate junk food yesterday.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What have I ordered over the past week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Advice on avoiding emotional eating.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What are the hidden ingredients in a zinger burger?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Calories in garlic bread",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Better alternative to carbonated soft drinks",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Recommend a nutritious breakfast.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Healthier food swap for zinger burger",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What is my order summary for the past 7 days?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Tell me the latest political news",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What is non-communicable disease risk related to diet?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How many high risk orders did I place recently?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Suggest a nutrient dense snack",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "What are healthy fats versus bad fats?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Steps to curb fast food addiction at night",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Display my order history for today",
+    "intent": "order_history"
+  },
+  {
+    "text": "Recommend a nutritious midnight snack",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How to manage hunger pangs between 10 PM and 4 AM?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Give me a breakdown of my recent orders",
+    "intent": "order_history"
+  },
+  {
+    "text": "Can you debug this C++ segmentation fault?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Tell me calories in shawarma",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Turn on the living room lights.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "I ate two burgers yesterday.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "I had two burgers last night.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How much sugar and carbohydrates are in a coke?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How many late night orders did I place?",
+    "intent": "order_history"
+  },
+  {
+    "text": "How do ultra processed foods affect long term health?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Show my meal history from this past week",
+    "intent": "order_history"
+  },
+  {
+    "text": "How does diet influence sleep quality?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What are the macros for a slice of cheese pizza?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Suggest some high protein foods.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "What is the speed of light in vacuum?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What causes insulin resistance?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How many calories in a slice of chocolate cake?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What should I eat instead of pizza tonight?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What is a wholesome lunch option?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How many calories do two burgers have?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Who is the president of the United States?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Tell me the calories in cheese burst pizza.",
+    "intent": "calorie_lookup"
+  }
+]

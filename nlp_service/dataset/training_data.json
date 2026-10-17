@@ -1,0 +1,854 @@
+[
+  {
+    "text": "How much protein and fat are in grilled chicken salad?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Calculate calories for cheese pizza",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What is the recommended daily intake of sugar?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Healthy replacement for carbonated beverages",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Can you generate an image of a cat?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Suggest an alternative to greasy pizza",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What are the calories in chocolate cake?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "How much added sugar is in carbonated soda?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What was my food intake over the past 7 days?",
+    "intent": "order_history"
+  },
+  {
+    "text": "How can I swap french fries for a healthier snack?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Why do I always crave sugar late at night?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Calories in 1 bottle of soda",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What is the distance from Earth to Mars?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Substitute for junk food burgers",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How can I reduce my overall health risk score?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What are the top tourist attractions in Japan?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How can I stop ordering food after 10 PM?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Did I have any healthy meals this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What food items did I order during the night?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Book a flight ticket to Mumbai.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "I ate a pair of pizzas yesterday.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Did I order any burgers or pizza recently?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is a good pre-workout meal recommendation?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How can I stop midnight eating habits?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How to overcome midnight food addiction?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Why should I avoid high glycemic index foods?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Is eating late at night bad for weight loss?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Give me a healthy vegetarian dinner suggestion",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Where is the nearest petrol pump?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Explain the impact of fast food on digestive health",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Show my order history from last night.",
+    "intent": "order_history"
+  },
+  {
+    "text": "How to stop ordering from Swiggy and Zomato at midnight?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Give me a healthy dinner suggestion.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Who won the soccer world cup?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What can I eat instead of french fries?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Play some music on Spotify.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Calorie content of coke",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Healthy food ideas for tonight",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Show my past order logs from yesterday",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is a healthier option than a zinger burger?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "I want to reduce my late-night junk food consumption.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How often did I order junk food this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Solve this math equation 5x + 3 = 18",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Can I replace coke with lemon water or green tea?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What foods help prevent cardiovascular diseases?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What are antioxidants and why are they beneficial?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Suggest something healthy to eat right now.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Healthier alternative to refined flour pasta",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Nutritional details of coke",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What is the calorie breakdown of cheese pizza?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What are the calories in a grilled chicken salad?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "How can I stay in the green healthy zone?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Can you check how many calories are in a can of coke?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What makes a meal balanced according to nutritional science?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Calculate the square root of 144.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Nutrient profile of healthy salad bowl",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What is the nutritional breakdown of a burger?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Why is dietary fiber protective against lifestyle diseases?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How does sodium affect blood pressure?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What time does the movie start?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How can I replace white bread with something healthier?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Healthy swap for cheese burst pizza",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How to avoid snacking late at night while working?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Calorie check for burger",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What was the last thing I ordered?",
+    "intent": "order_history"
+  },
+  {
+    "text": "How to format a hard drive in Windows?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What nutrients are in a salad?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How does sleep deprivation increase appetite hormones?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Suggest a low calorie meal for dinner",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Healthy alternatives to potato chips",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What should I have for a healthy lunch?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Who won the cricket match yesterday?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Write a python script to reverse a linked list.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Calorie value of french fries",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Healthy alternative to milk chocolate",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Give me a wholesome protein rich snack recommendation",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How does sugar cause fatty liver disease?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How do I change my car tire?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Nutrition facts for cheese burst pizza",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What is the role of micronutrients in human body?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What can I drink instead of soda?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How to reset my diet after an unhealthy weekend?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Recommend meals that reduce NCD risk",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Tell me the sugar content in coke.",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How to avoid late night ordering triggers?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What are the dangers of high sodium intake?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What did I eat yesterday at midnight?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What can I substitute for mayonnaise?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What are the benefits of intermittent fasting?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Does cheese burst pizza contain trans fats?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What did I eat most frequently this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Review my orders from today.",
+    "intent": "order_history"
+  },
+  {
+    "text": "How can I stop craving junk food at midnight?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Can you suggest a replacement for junk food?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What are trans fats and why are they bad?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "I binged on fast food yesterday, how to recover?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Suggest a healthier alternative to a burger.",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What is the daily recommended intake of fiber?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Why is hydration important for metabolism?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What is the total calorie value of sprout salad?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Why should we avoid hydrogenated vegetable oils?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What is a healthier alternative to fried chicken?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How many calories does a burger have?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Calorie count for a can of coke",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Order an Uber ride for me.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Instead of ordering a burger what should I eat?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How much calories do I get from sprout salad?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What can I eat that won't spike my blood sugar?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "I need a guilt free late night meal",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Give me a healthier alternative to potato fries",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Pizza calories",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What is an alternative to eating late night pizza?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "How many calories in 3 burgers?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Advice on controlling late night cravings for fast food",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Show me the fat and protein of burger",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What should I eat for a late night snack?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Give me the nutrition facts for french fries",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How many kcal in sprout salad?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Summarize my eating pattern this past week.",
+    "intent": "order_history"
+  },
+  {
+    "text": "Suggest healthy food to order on Zomato",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Micronutrient content in sprout salad",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Recommend foods that keep me in the green health tier",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Does burger have high sodium or trans fat?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Advice on building healthier eating patterns",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Recommend a healthy meal for lunch.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How many calories in a portion of pasta?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "List my food orders from yesterday evening",
+    "intent": "order_history"
+  },
+  {
+    "text": "Show my Swiggy and Zomato order logs",
+    "intent": "order_history"
+  },
+  {
+    "text": "Tell me the fat content in cheese burst pizza",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How to control my midnight cravings?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Why is dietary fiber good for digestion?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What are some healthy options for breakfast tomorrow?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Strategies to prevent habit drift towards junk food",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Did I order pizza this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is the boiling point of ethanol?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How many burgers did I order this month?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is a better alternative to deep fried food?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Recommend a good sci fi movie to watch",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How many cals in a zinger burger?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "How many calories are in a pizza?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Show all orders from the last 7 days",
+    "intent": "order_history"
+  },
+  {
+    "text": "Swap my pizza craving for a healthier option",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Can you help me fix my computer screen?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How much sugar is inside a bottle of coke?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What causes midnight hunger from a biological standpoint?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "What is the macro breakdown of sprout salad?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Help me write an email to my manager.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How many calories in an ice cream cup?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "What are healthy alternatives for midnight hunger?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Help me build better nighttime eating habits.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Translate this sentence into Spanish.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How many total calories in this cheese burst pizza?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "I ate pizza last night.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Recommend a clean low carb meal.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Show me calorie details for zinger burger",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Recommend high fiber foods for dinner",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "What are good low calorie snacks?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Calorie estimation for grilled chicken",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Nutritional value of grilled chicken",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "How frequently did I order late night food this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What can I eat instead of ordering cheese pizza?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "I had pizza last night, what should my diet look like today?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What should I order from Swiggy that is healthy?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Why is late night digestion slower than daytime?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Can you suggest a light dinner?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How many unhealthy orders did I place this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Show my meal logs from earlier today",
+    "intent": "order_history"
+  },
+  {
+    "text": "How many calories in two slices of pizza?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Calories in grilled chicken salad please",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Suggest a healthy dish to curb hunger",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "How to improve my late night eating habits?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What can I eat for dinner that is healthy and light?",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Does burger have saturated fat?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What is the calorie count of a burger?",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "I ate junk food last night how should I eat today?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Tips to stop stress eating after work.",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How many times did I order late night food?",
+    "intent": "order_history"
+  },
+  {
+    "text": "Write a poem about autumn leaves",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How much junk food have I consumed this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What are the unhealthy ingredients in pizza?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What should I do when I feel like ordering junk late at night?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Show me the macro breakdown of zinger burger",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Set an alarm for 7 AM tomorrow.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "What is the protein content of grilled chicken?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Suggest a nutritious meal for weight loss.",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Tell me the calorie count in french fries",
+    "intent": "calorie_lookup"
+  },
+  {
+    "text": "Detailed nutrition facts for burger",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Suggest a light meal after workout",
+    "intent": "food_recommendation"
+  },
+  {
+    "text": "Substitute for high calorie midnight snacks",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "What is today's stock price for Apple?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How many unhealthy meals have I eaten this week?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is the capital city of France?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "Show my recent eating history.",
+    "intent": "order_history"
+  },
+  {
+    "text": "What can I substitute for pizza?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Tell me a funny joke.",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How does late night eating affect metabolism?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How can I prevent binge eating at night?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Tips for mindful eating late at night",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How much sodium is in pizza?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Why does processed food lead to inflammation?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Check nutritional breakdown of fast food burger",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "Explain how chronic late night eating leads to metabolic syndrome",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How do I maintain a healthy eating streak?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "Why are refined carbohydrates harmful?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "How does dietary cholesterol affect overall health?",
+    "intent": "general_nutrition"
+  },
+  {
+    "text": "Check my late night food logs.",
+    "intent": "order_history"
+  },
+  {
+    "text": "How many orders did I place late last night?",
+    "intent": "order_history"
+  },
+  {
+    "text": "What is the exchange rate of USD to INR?",
+    "intent": "unsupported"
+  },
+  {
+    "text": "How to balance nutrition after a cheat day?",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "What can I replace sugary coke with?",
+    "intent": "food_substitution"
+  },
+  {
+    "text": "Practical advice to curb junk food habit",
+    "intent": "habit_advice"
+  },
+  {
+    "text": "How much dietary fiber is in sprout salad?",
+    "intent": "nutrition_info"
+  },
+  {
+    "text": "What are the macronutrients in sprout salad?",
+    "intent": "nutrition_info"
+  }
+]

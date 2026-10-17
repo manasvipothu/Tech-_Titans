@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const LOCAL_IP = '192.168.1.6'; // DETECTED MACHINE IP FOR PHYSICAL DEVICE
+const LOCAL_IP = '192.168.1.7'; // DETECTED MACHINE IP FOR PHYSICAL DEVICE
 const API_URL = `http://${LOCAL_IP}:5000/api`;
 
 const api = axios.create({
@@ -97,9 +97,9 @@ export const getGoals = async (userId) => {
   }
 };
 
-export const aiChat = async (message) => {
+export const aiChat = async (message, userId = 'test_user_123') => {
   try {
-    const res = await api.post('/ai-chat', { message });
+    const res = await api.post('/ai-chat', { message, userId });
     return res.data;
   } catch (e) {
     console.error('API aiChat failed', e);
